@@ -1,0 +1,204 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,700,900,300");
+
+*, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    font-family: 'Open Sans',serif;
+    font-weight: 300;
+}
+
+.footer{}
+
+.carousel-caption {
+	position: absolute;
+	right: 15%;
+	bottom: 75%;
+	left: 15%;
+	z-index: 10;
+	color: #fff;
+	text-align: justify;
+	font-weight: bold;
+	background-color: #007bff85;
+	animation: cubic-bezier;
+	padding: 20px;
+}
+
+.carousel-overlay{
+  background:rgba(0, 0, 0, .75);
+      text-align:center;
+      opacity:0;    
+      width:100%;height:100%; 
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      position: absolute;
+      top: 0;
+      left: 0;
+}
+
+
+.ticker-container {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    background-color: #343a40;
+    color: white;
+    /*background-color: white;
+    color: black;*/
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+.ticker-container .ticker-caption {
+    height: 50%;
+    width: 100%;
+    background-color: #EC0B43;
+    display: table;
+    position: absolute;
+    color: white;
+    font-size: 0.8em;
+    z-index: 1;
+}
+.ticker-container .ticker-caption p {
+    height: inherit;
+    width: inherit;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: bold;
+}
+.ticker-container ul {
+    list-style: none;
+    padding: 0;
+    height: auto;
+}
+.ticker-container ul div {
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    display: inline;
+    min-width: 100%;
+    left: 0;
+    height: 50%;
+    transition: 0.25s ease-in-out;
+}
+.ticker-container ul div.ticker-active {
+    top: 30px;
+}
+.ticker-container ul div.not-active {
+ display:none;
+}
+.ticker-container ul div.remove {
+    top: 0;
+}
+.ticker-container ul div li {
+    padding: 5px 0;
+}
+.ticker-container ul div li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+@media (min-width: 500px) {
+    .ticker-container {
+        height: 35px;
+        text-align: left;
+    }
+    .ticker-container .ticker-caption {
+        height: 100%;
+        width: 150px;
+        background-color: #007bff;
+    }
+    .ticker-container .ticker-caption p {
+        text-align: center;
+        padding-left: 7px;
+    }
+    .ticker-container ul {
+        margin-left: 170px;
+        height: 100%;
+    }
+    .ticker-container ul div {
+        height: 100%;
+        left: 170px;
+    }
+    .ticker-container ul div.ticker-active {
+        top: 0;
+    }
+    .ticker-container ul div.not-active {
+        top: 30px;
+    }
+    .ticker-container ul div.remove {
+        top: -30px;
+    }
+}
+
+@media (min-width: 768px) {
+  .ticker-container {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .ticker-container {
+    margin-bottom: 0px;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
